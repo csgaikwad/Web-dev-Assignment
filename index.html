@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/index.css" />
     <title>ABC</title>
   </head>
@@ -40,7 +46,105 @@
           Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
           nec risus finibus feugiat et fermentum
         </p>
-        <button class="contactBtn">CONTACT US</button>
+        <!-- <button class="contactBtn">CONTACT US</button> -->
+        <!-- Button trigger modal -->
+        <button
+          class="contactBtn"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Contact Us
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="form-header">Talk to us</h1>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="#" method="post" class="contactUsForm">
+                  <div class="form-group-input">
+                    <div class="form-group-email">
+                      <div class="input-container">
+                        <input
+                          id="email"
+                          type="email"
+                          name="email"
+                          value="abcd@gmail.com"
+                          required
+                        />
+                        <span class="placeholder" id="emailPlaceholder"
+                          >Work email*</span
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group-firstName">
+                      <div class="input-container">
+                        <input
+                          id="firstName"
+                          type="text"
+                          name="firstName"
+                          required
+                        />
+                        <span class="placeholder" id="firstNamePlaceholder"
+                          >First name*</span
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group-lastName">
+                      <div class="input-container">
+                        <input
+                          id="lastName"
+                          type="text"
+                          name="lastName"
+                          value="abc"
+                          required
+                        />
+                        <span class="placeholder" id="lastNamePlaceholder"
+                          >Last name*</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group-checkbox">
+                    <input
+                      type="checkbox"
+                      id="termsCheckbox"
+                      name="termsCheckbox"
+                      checked="true"
+                      required
+                    />
+                    <label for="termsCheckbox">
+                      I agree to Fyle’s terms and conditions, and provide
+                      consent to send me communication.
+                    </label>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="submit" class="formBtn">Contact Us</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="contactUsImage">
         <img
@@ -62,11 +166,53 @@
       facere nostrum, iste ipsum neque, voluptate, ea nihil quas commodi!
       Doloremque minus, pariatur optio earum magnam totam at? Quae accusantium
       minus error quod iusto, quis veritatis non voluptate, quibusdam repellat
-      quasi!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ea vitae sapiente explicabo deserunt, totam ducimus, ullam earum dolore natus obcaecati at et possimus expedita exercitationem! Ad, dicta! Soluta molestiae nobis facilis maiores repellendus natus assumenda impedit quis! Autem sit rerum sed quaerat asperiores cum vero expedita iure omnis, praesentium est adipisci reiciendis impedit dolorum eaque animi! Dolorum, laboriosam ipsa saepe beatae consequatur veritatis? Ipsum ullam laboriosam, et eveniet consequuntur velit delectus quidem quod, optio magnam sint autem odit sit alias repellat corrupti consequatur laudantium a quis incidunt dignissimos. Repudiandae aliquam vitae atque deleniti nobis quasi sequi in blanditiis nostrum vel possimus architecto id nam, ut molestias placeat rem quia facere beatae facilis nesciunt. Odio nesciunt veritatis tempore ipsum? Voluptatem eligendi praesentium ullam. Dicta nostrum quisquam aperiam deleniti laboriosam voluptate doloribus, ipsam distinctio dolorem excepturi facere reiciendis accusantium. Expedita, repellendus nulla nisi cumque doloribus unde, beatae excepturi eius nihil commodi itaque voluptatibus laudantium. Nisi tenetur asperiores ipsa. Deserunt quod, cum expedita maxime exercitationem dignissimos iste, voluptatibus facilis ullam similique repudiandae sequi incidunt commodi? Ducimus rerum libero quas sunt minus autem cumque similique asperiores pariatur, laudantium velit? Maxime impedit possimus consequuntur explicabo optio commodi, dolorem minima, illum non dicta, ab architecto?
+      quasi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ea
+      vitae sapiente explicabo deserunt, totam ducimus, ullam earum dolore natus
+      obcaecati at et possimus expedita exercitationem! Ad, dicta! Soluta
+      molestiae nobis facilis maiores repellendus natus assumenda impedit quis!
+      Autem sit rerum sed quaerat asperiores cum vero expedita iure omnis,
+      praesentium est adipisci reiciendis impedit dolorum eaque animi! Dolorum,
+      laboriosam ipsa saepe beatae consequatur veritatis? Ipsum ullam
+      laboriosam, et eveniet consequuntur velit delectus quidem quod, optio
+      magnam sint autem odit sit alias repellat corrupti consequatur laudantium
+      a quis incidunt dignissimos. Repudiandae aliquam vitae atque deleniti
+      nobis quasi sequi in blanditiis nostrum vel possimus architecto id nam, ut
+      molestias placeat rem quia facere beatae facilis nesciunt. Odio nesciunt
+      veritatis tempore ipsum? Voluptatem eligendi praesentium ullam. Dicta
+      nostrum quisquam aperiam deleniti laboriosam voluptate doloribus, ipsam
+      distinctio dolorem excepturi facere reiciendis accusantium. Expedita,
+      repellendus nulla nisi cumque doloribus unde, beatae excepturi eius nihil
+      commodi itaque voluptatibus laudantium. Nisi tenetur asperiores ipsa.
+      Deserunt quod, cum expedita maxime exercitationem dignissimos iste,
+      voluptatibus facilis ullam similique repudiandae sequi incidunt commodi?
+      Ducimus rerum libero quas sunt minus autem cumque similique asperiores
+      pariatur, laudantium velit? Maxime impedit possimus consequuntur explicabo
+      optio commodi, dolorem minima, illum non dicta, ab architecto?
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="src/script.js"></script>
   </body>
 </html>
