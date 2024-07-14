@@ -370,6 +370,71 @@ input:focus {
   width: 2rem;
 }
 
+.ourProjects {
+  margin: 5% 10% 5% 15%;
+  width: 70rem;
+  text-align: center;
+}
+.ourProjects .blackH1 {
+  padding-top: 1rem;
+  font-size: 2.3rem;
+}
+.ourProjects .wrapper {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+}
+.ourProjects .wrapper img {
+  margin-right: 2rem;
+  height: 30rem;
+  width: 40rem;
+  border-radius: 4px;
+}
+.line-container {
+  cursor: pointer;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: left;
+}
+.line {
+  transition: 0.5s;
+  padding: 1.7rem 2rem 0 2rem;
+  height: 33.33%;
+  background-color: rgb(235, 235, 235);
+}
+.line.active,
+.line:hover.active {
+  background-color: #ff415e;
+  color: white;
+}
+.line:hover {
+  background-color: #fec0c0;
+}
+.line h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.line p {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 400;
+}
+
+footer {
+  height: 10rem;
+  width: 100%;
+  margin-top: 10rem;
+  background-color: #ff415e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  cursor: pointer;
+}
 /*
 @media screen and (max-width: 900px) {
   .carousel img{

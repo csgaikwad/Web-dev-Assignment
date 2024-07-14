@@ -110,4 +110,33 @@ $(document).ready(function () {
   }
 
   setInterval(autoScroll, 4000);
+
+  let currentIndex2 = 0;
+  const images = $(".image-container img");
+  const totalImages = images.length;
+  const lines = $(".line");
+
+  function showImage(index) {
+    images.hide();
+    $(images[index]).show();
+    lines.removeClass("active");
+    $(lines[index]).addClass("active");
+  }
+
+  function nextImage() {
+    currentIndex2 = (currentIndex2 + 1) % totalImages;
+    showImage(currentIndex2);
+  }
+
+  lines.click(function () {
+    lines.removeClass("active");
+    $(this).addClass("active");
+    const target = $(this).data("target");
+    images.hide();
+    $(target).show();
+    currentIndex2 = images.index($(target));
+  });
+
+  setInterval(nextImage, 2000);
+  showImage(currentIndex2);
 });
