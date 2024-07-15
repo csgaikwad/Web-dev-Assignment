@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Hide scrollbar */
@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 
 /* Optional: Show scrollbar track and customize */
 body::-webkit-scrollbar-thumb {
-  background-color: #ff5972;
+  background-color: #ff415e;
   border-radius: 1rem;
 }
 /* <--Navbar--> */
@@ -46,7 +46,7 @@ nav {
 
 /* <--Contact Us--> */
 .contactUs {
-  padding: 4% 0 4% 15%;
+  padding: 4% 0 4% 12%;
   display: flex;
   gap: 1rem;
 }
@@ -64,8 +64,8 @@ nav {
   font-family: "Gothic A1", sans-serif;
   font-weight: bolder;
   -webkit-text-stroke: 1px black;
-  font-size: 3rem;
-  letter-spacing: 1px;
+  font-size: 2.3rem;
+  margin: 1rem 0 1rem 0;
 }
 .redH2 {
   font-family: "Gothic A1", sans-serif;
@@ -77,10 +77,10 @@ nav {
 }
 
 .contactUsImage {
-  padding: 1rem 0 0 2rem;
+  padding: 3rem 0 0 2rem;
 }
 .contactUsImage img {
-  height: 30rem;
+  height: 27rem;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -227,12 +227,11 @@ input:focus {
   box-shadow: none;
 } */
 
-.whatWeDo {
-  padding: 6% 0 4% 15%;
+#what-we-do{
+  scroll-margin-top: 5rem;
 }
-
-.whatWeDo .redH2 {
-  font-size: 1.5rem;
+.whatWeDo {
+  margin: 6% 6% 4% 12%;
 }
 
 .whatWeDoFlexText {
@@ -243,7 +242,6 @@ input:focus {
 }
 
 .whatWeDoFlexText .blackH1 {
-  font-size: 2.5rem;
   width: 60%;
 }
 
@@ -253,8 +251,8 @@ input:focus {
   align-self: end;
 }
 
-.wrapper {
-  max-width: 70rem;
+.whatWeDo .wrapper {
+  width: 100%;
 }
 
 .carousel {
@@ -301,8 +299,8 @@ input:focus {
 .imgContainer {
   display: inline-block;
   position: relative;
-  height: 23rem;
-  width: 16rem;
+  height: 22rem;
+  width: 15rem;
   cursor: default;
   object-fit: cover;
   user-select: none;
@@ -370,13 +368,53 @@ input:focus {
   width: 2rem;
 }
 
+.whyChooseUs {
+  text-align: center;
+  margin: 10% 5% 10% 10%;
+}
+#why-choose-us {
+  scroll-margin-top: 6rem;
+}
+.whyChooseUs .cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.whyChooseUs .cardContainer img {
+  height: 3rem;
+  width: 3rem;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.card {
+  border: none;
+  width: 20%;
+  margin-top: 2rem;
+  cursor: default;
+  padding: 1rem 1rem 0.5rem 1.5rem;
+  transition: all 0.2s;
+}
+.card:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+.card p {
+  font-size: 0.8rem;
+}
+
+#our-projects {
+  scroll-margin-top: 4rem;
+}
+
 .ourProjects {
-  margin: 5% 10% 5% 15%;
-  width: 70rem;
+  margin: 5% 5% 5% 10%;
   text-align: center;
 }
 .ourProjects .blackH1 {
-  padding-top: 1rem;
   font-size: 2.3rem;
 }
 .ourProjects .wrapper {
@@ -386,13 +424,13 @@ input:focus {
 }
 .ourProjects .wrapper img {
   margin-right: 2rem;
-  height: 30rem;
-  width: 40rem;
+  height: 28rem;
+  width: 38rem;
   border-radius: 4px;
 }
 .line-container {
   cursor: pointer;
-  height: 30rem;
+  height: 28rem;
   width: 20rem;
   border-radius: 4px;
   overflow: hidden;
@@ -423,10 +461,89 @@ input:focus {
   font-weight: 400;
 }
 
+#experts-growth{
+  scroll-margin-top:3rem ;
+}
+.expertsGrowth {
+  margin: 5% 0% 5% 0%;
+  padding: 2% 10% 5% 10%;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+}
+
+.expertsGrowth .wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.expertsGrowth .card {
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.expertsGrowth .card img {
+  height: 2.5rem;
+  width: 2.5rem;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.expertsGrowth .card h3 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.expertsGrowth .card p {
+  color: #767676;
+  font-weight: 600;
+}
+.expertsGrowth .card:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+.clientsFeedback {
+  margin: 5% 5% 0% 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackWrapper {
+  margin: 1rem;
+  background-image: url(/Web-dev-Assignment/public/quotes.png);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: 0rem;
+  background-position-y: 0.6rem;
+  padding: 2rem ;
+  width: 60%;
+  text-align: left;
+  align-items: start;
+}
+.feedbackWrapper h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.feedbackWrapper h3 {
+  margin: 2rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #767676;
+}
+.redSpan{
+  color: #ff415e;
+  font-weight: 600;
+
+}
+
 footer {
   height: 10rem;
   width: 100%;
-  margin-top: 10rem;
   background-color: #ff415e;
   display: flex;
   justify-content: center;
@@ -435,14 +552,3 @@ footer {
 footer img {
   cursor: pointer;
 }
-/*
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
-  }
-} */
