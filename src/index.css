@@ -227,7 +227,7 @@ input:focus {
   box-shadow: none;
 } */
 
-#what-we-do{
+#what-we-do {
   scroll-margin-top: 5rem;
 }
 .whatWeDo {
@@ -461,8 +461,8 @@ input:focus {
   font-weight: 400;
 }
 
-#experts-growth{
-  scroll-margin-top:3rem ;
+#experts-growth {
+  scroll-margin-top: 3rem;
 }
 .expertsGrowth {
   margin: 5% 0% 5% 0%;
@@ -517,7 +517,7 @@ input:focus {
   background-size: 10%;
   background-position-x: 0rem;
   background-position-y: 0.6rem;
-  padding: 2rem ;
+  padding: 2rem;
   width: 60%;
   text-align: left;
   align-items: start;
@@ -535,10 +535,9 @@ input:focus {
   font-size: 1rem;
   color: #767676;
 }
-.redSpan{
+.redSpan {
   color: #ff415e;
   font-weight: 600;
-
 }
 
 footer {
@@ -551,4 +550,21 @@ footer {
 }
 footer img {
   cursor: pointer;
+}
+
+/* Small screens and up */
+@media (max-width: 768px) {
+  .contactUs,
+  .whatWeDoFlexText,
+  .whyChooseUs .cardContainer,
+  .ourProjects .wrapper,
+  .expertsGrowth .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card,
+  .feedbackWrapper {
+    width: 100%;
+  }
 }
