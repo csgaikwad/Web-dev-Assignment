@@ -15,6 +15,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1rem;
 }
 /* <--Navbar--> */
+.navIcon {
+  display: none;
+}
 nav {
   position: fixed;
   top: 0;
@@ -550,10 +553,32 @@ footer {
 }
 footer img {
   cursor: pointer;
+  width: 75%;
 }
 
 /* Small screens and up */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .nav-link img {
+    height: 2rem;
+    transition: transform 0.3s ease;
+  }
+  .nav-link,
+  .navIcon {
+    display: inline-block;
+  }
+
+  .nav-link:focus img,
+  .nav-link:active img {
+    transform: rotate(180deg);
+  }
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
   .contactUs,
   .whatWeDoFlexText,
   .whyChooseUs .cardContainer,
@@ -564,7 +589,29 @@ footer img {
     align-items: center;
   }
   .card,
-  .feedbackWrapper {
+  .feedbackWrapper,
+  footer img {
     width: 100%;
+  }
+  .contactUsImage img {
+    height: 20rem;
+    margin-right: 5%;
+  }
+  .ourProjects .wrapper img {
+    height: 14rem;
+    width: 20rem;
+    margin-left: 2rem;
+  }
+  .redH2 {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+  .line {
+    padding: 1rem 1.5rem 0 1.2rem;
+    line-height: 1rem;
+  }
+  .line h3 {
+    margin-bottom: 0.5rem;
   }
 }
